@@ -14,12 +14,11 @@ body {
 
 #cards-container {
   margin-top: 4em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em; 
   width: 100%;
-  align-items: center;
-  gap: 1em;
+  align-items: start; 
 }
 
 .product {
@@ -28,7 +27,11 @@ body {
   padding: .5em;
   background: #E5E5E5;
   line-height: 2;
-  width: 250px;
+  max-width: 250px;
+}
+
+.product-title::first-letter, .product-description::first-letter {
+  text-transform: uppercase;
 }
 
 .img {
@@ -48,4 +51,8 @@ body {
 
 .img-container {
   height: 320px;
+}
+
+article {
+  text-align: start;
 }
