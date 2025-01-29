@@ -13,7 +13,8 @@ body {
 }
 
 #cards-container {
-  margin-top: 4em;
+  padding-inline: 1em;
+  margin-top: 2em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em; 
