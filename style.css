@@ -16,7 +16,7 @@ body {
   padding-inline: 1em;
   margin-top: 2em;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em; 
   width: 100%;
   align-items: start; 
@@ -60,4 +60,16 @@ img {
 
 article {
   text-align: start;
+}
+
+@media (min-width: 699px) {
+  #cards-container {
+    padding-inline: 1em;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em; 
+    width: 100%;
+    align-items: start; 
+  }
 }
