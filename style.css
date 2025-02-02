@@ -109,11 +109,11 @@ article {
   }
 
   .img-container {
-    height: 250px;
+    height: 320px;
   }
 
   img {
-    max-height: 255px;
+    max-height: 320px;
   }
 }
 
