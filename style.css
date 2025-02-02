@@ -107,6 +107,14 @@ article {
     width: auto;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .img-container {
+    height: 250px;
+  }
+
+  img {
+    max-height: 255px;
+  }
 }
 
 @media (min-width: 1200px) {
