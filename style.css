@@ -54,6 +54,10 @@ body {
   height: 320px;
 }
 
+img {
+  max-height: 310px;
+}
+
 article {
   text-align: start;
 }
