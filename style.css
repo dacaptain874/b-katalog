@@ -15,7 +15,7 @@ body {
 .title {
   background-color: #ff1313; 
   color: white; 
-  padding-block: 1em;
+  padding-block: .5em;
   text-transform: uppercase;
 }
 
