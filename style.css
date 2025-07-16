@@ -12,14 +12,26 @@ body {
   justify-content: center;
 }
 
-#cards-container {
+.title {
+  background-color: #ff1313; 
+  color: white; 
+  padding-block: .5em;
+  text-transform: uppercase;
+}
+
+#cards-container, #discount-container {
   padding-inline: 1em;
-  margin-top: 2em;
+  margin-top: 1em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em; 
   width: 100%;
   align-items: start; 
+}
+
+#discount-container {
+  background-color: #f0ad07;
+  padding: 1em 2em;
 }
 
 .product {
@@ -72,7 +84,7 @@ article {
 }
 
 @media (min-width: 699px) {
-  #cards-container {
+  #cards-container, #discount-container {
     padding-inline: 1em;
     margin-top: 2em;
     display: grid;
@@ -80,6 +92,11 @@ article {
     gap: 1em; 
     width: 100%;
     align-items: start; 
+  }
+
+  #discount-container {
+  margin-top: 0;
+
   }
 
   .img-container {
@@ -97,13 +114,13 @@ article {
 }
 
 @media (min-width: 999px) {
-  #cards-container {
+  #cards-container, #discount-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 380px) {
-  #cards-container {
+  #cards-container, #discount-container {
     width: auto;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -118,7 +135,7 @@ article {
 }
 
 @media (min-width: 1200px) {
-  #cards-container {
+  #cards-container, #discount-container {
     grid-template-columns: repeat(5, 1fr);
   }
 }
